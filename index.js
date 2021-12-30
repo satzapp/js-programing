@@ -53,13 +53,28 @@ console.log(
   jsonObj.sort((x,y)=> x.location.name.localeCompare(y.location.name))
   )
 
-function sortArrays(arr) {
-    // var sortedlocationData = [];
-    // for(let data in arr) {
-    //     sortedlocationData.push(arr[data]['location']);
-    // }
+for (var i = 0; i < 3; i++) {
+  const log = () => {
+    console.log('var', i);
+  }
+  setTimeout(log, 100);
+}
 
-    // return sortedlocationData.sort(sortedlocationData.name);
-  
-    return arr.sort(function(a,b){return obj[b]-obj[a]})
-} 
+for (let i = 0; i < 3; i++) {
+  const log = () => {
+    console.log('let', i);
+  }
+  setTimeout(log, 100);
+}
+
+var a = [1,2,3,4,5];
+a[20] = 30;
+
+console.log(a)
+
+var aa = {
+  name: 'satz',
+  age: 30
+}
+
+console.log(aa.name);

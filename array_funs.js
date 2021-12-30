@@ -26,4 +26,5 @@ let itemSortByNumber = items.sort((x,y)=>{
 })
 
 
-console.log(itemSortByNumber)
+console.log(itemsSort, itemSortByNumber)
+
